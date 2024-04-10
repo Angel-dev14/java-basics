@@ -7,7 +7,7 @@ class Person {
     private Integer age;
 
     Person(String name, Integer age) {
-        //this.name = name;
+        // this.name = name;
         this.name = name;
         this.age = age;
     }
@@ -100,9 +100,9 @@ class Cat extends Animal {
     }
 }
 
-//class G<E> implements List<E> {
+// class G<E> implements List<E> {
 //
-//}
+// }
 
 // [ Animal Garden - {NAME} ]
 // [ House of animal - {name of animal} - TYPE
@@ -123,7 +123,7 @@ class AnimalGarden {
     }
 
     void removeAnimal(Animal animal) throws RuntimeException {
-        if(this.animals.contains(animal)) {
+        if (this.animals.contains(animal)) {
             this.animals.remove(animal);
         }
         throw new RuntimeException("There is no animal with name " + animal.name);
@@ -140,15 +140,15 @@ class AnimalGarden {
     }
 }
 
-public class Main {
+public class Lesson {
 
-    public static void main(String[] args) {
+    public static void lesson(String[] args) {
 
         Animal dog1 = new Dog("pero", "vucjak");
         Animal dog2 = new Dog("pero", "vucjak");
         Animal dog3 = new Dog("pero", "vucjak");
         Animal cat = new Cat("pero", "bela");
-        Animal[] animals = {dog1, dog2, dog3, cat};
+        Animal[] animals = { dog1, dog2, dog3, cat };
 
         AnimalGarden garden = new AnimalGarden();
         garden.addAnimal(dog1);
