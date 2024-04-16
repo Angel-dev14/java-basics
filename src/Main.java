@@ -64,7 +64,7 @@ class Person {
 interface YearOfBirthTemplateFilter {
 
     Boolean test(LocalDate date);
-    Boolean test2(LocalDate date);
+    //Boolean test2(LocalDate date);
 
 }
 
@@ -90,6 +90,8 @@ public class Main {
 
         Predicate<Person> p = person -> person.getDateOfBirth().getYear() <= 2001;
 
+        YearOfBirthTemplateFilter filter = date -> date.getYear() <= 2001;
+
 
         Predicate<Person> pred = person -> filter.test(person.getDateOfBirth());
 
@@ -104,7 +106,7 @@ public class Main {
             persons
         );
 
-    //    https://www.baeldung.com/java-groupingby-collector
+
 
     }
 }
