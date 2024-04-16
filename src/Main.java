@@ -106,7 +106,7 @@ public class Main {
             persons
         );
 
-
+       // https://www.baeldung.com/java-groupingby-collector
 
     }
 }
